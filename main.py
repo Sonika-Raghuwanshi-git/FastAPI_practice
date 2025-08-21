@@ -14,9 +14,6 @@ def home():
 # def get_blogs(limit: int = 10, published: bool = True, sort: Optional[str] = None):
 #     return {"data": f"{limit} blogs from DB, published={published}, sort={sort}"}
 
-# @app.get("/blog/unpublished")
-# def unpublished():
-#     return {"data": "All unpublished blogs"}
 
 @app.get("/blog/{id}")
 def show_blog(id: int):
