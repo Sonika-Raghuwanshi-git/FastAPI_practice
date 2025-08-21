@@ -22,10 +22,6 @@ def home():
 def show_blog(id: int):
     return {"data": f"Blog with id{id}"}
 
-# @app.get("/blog/{id}/comments")
-# def comments(id: int, limit: int = 10):
-#     return {"data": f"{limit} comments for blog {id}"}
-
 @app.post("/blog")
 def create_blog(request: Blog):
     return {"data": f"Blog created with title {request.title}"}
